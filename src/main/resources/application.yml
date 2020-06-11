@@ -1,0 +1,4 @@
+resilience4j.bulkhead:
+  instances:
+    bulkheadAnnotation:
+      maxConcurrentCalls: 1
