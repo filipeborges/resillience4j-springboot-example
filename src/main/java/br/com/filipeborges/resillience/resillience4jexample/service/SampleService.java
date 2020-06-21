@@ -17,4 +17,7 @@ public class SampleService {
         return Mono.just("Sample Status - Fail");
     }
 
+    public Mono<String> emitException() {
+        throw new RuntimeException("My Exception");
+    }
 }

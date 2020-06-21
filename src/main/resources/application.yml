@@ -2,3 +2,11 @@ resilience4j.bulkhead:
   instances:
     bulkheadAnnotation:
       maxConcurrentCalls: 1
+resilience4j.circuitbreaker:
+  instances:
+    circuitBreakerAnnotation:
+      slidingWindowSize: 6
+      permittedNumberOfCallsInHalfOpenState: 2
+      failureRateThreshold: 50
+      minimumNumberOfCalls: 2
+      waitDurationInOpenState: 30s
